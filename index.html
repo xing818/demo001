@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E族之家</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul,li{
+			list-style: none;
+		}
+		a{
+			color: #000;
+			text-decoration: none;
+		}
+		/* 头部 */
+		.header-wrap{
+			height: 35px;
+			background-color: #f4f4f4;
+		}
+		.header{
+			width: 1200px;
+			height: 35px;
+			margin: 0 auto;
+		}
+		#headerleft{
+			float: left;
+			color: black;
+			height: 35px;
+			line-height: 35px;
+		}
+		#headerright{
+			float: right;
+			color: black;
+			height: 35px;
+			line-height: 35px;
+			font-size: 14px;
+		}
+		.header span{
+			font-size: 18px;
+			margin-right: 5px;
+			float: right;
+		}
+		.header img{
+			margin:2px 0 0 0; 
+			float: left;
+		}
+		.header a{
+			color: black;
+			font-size: 14px;
+			margin: 0px 5px 0;
+		}
+		/* 搜索栏 */
+		.search{
+			width: 1200px;
+			height: 120px;
+			margin: 0 auto;
+		}
+		#search-left{
+			margin-top: 12px;
+		}
+		#search-middle{
+			width: 500px;
+			height: 40px;
+			background-color: #f83838;
+			display: inline-block;
+			border:1px solid #f83838; 
+			position: relative;
+			left:  350px;
+			bottom: 60px;
+		}
+		#search-middle input{
+			width: 410px;
+			height: 40px;
+			border:#f83838; 
+		}
+		#search-middle a{
+			color: #fff;
+			margin: 25px;
+		}
+		#search-right{
+			width: 160px;
+			height: 40px;
+			border:1px solid #e3e3e3;
+			background-color: #f5f5f5;
+			display: inline-block;
+			position: relative;
+			left: 520px;
+			bottom: 60px;
+		}
+		#search-right a{
+			color: black;
+		}
+		/* 导航 */
+		.nav-wrap{
+			height: 30px;
+			border-bottom:1.5px solid #f83838;
+		}
+		.nav{
+			width: 1200px;
+			height: 30px;
+			margin: 0 auto;
+		}
+		.nav p{
+			float: left;
+			line-height: 30px;
+		}
+		.nav p a{
+			color: #000;
+			font-size: 18px;
+			float: left;
+			text-align: center;
+			margin: 0 20px; 
+			width: 100px;
+			height: 30px;
+		}
+		.nav p a:hover{
+			color: #fff;
+			background-color: #f83838;
+			border-radius: 5px;
+		}
+		/*主体部分*/
+		.main-wrap{
+			height: 740px;
+			background-color: #fbfbfb;
+		}
+		.main{
+			width: 1200px;
+			height: 740px;
+			margin: auto;
+		}
+		#crumb{
+			line-height: 80px;
+		}
+		#crumb a{
+			font-size: 16px;
+			color: black;
+		}
+		#kinds-left-top{
+			width: 230px;
+			height: 50px;
+			background-color: #fff;
+		}
+		#kinds-left-top a img{
+			margin: 0px 9px 0 15px;
+		}
+		#kinds-left-bottom{
+			width: 230px;
+			height: 575px;
+			margin-top: 15px; 
+			background-color: #fff;
+		}
+		.simg li{
+			padding: 20px 0 10px 70px;
+		}
+		.simg li:first-child{
+			color:#f83838; 
+		}
+		#kinds-right{
+			width: 955px;
+			height: 640px;
+			float: right;
+			background-color: #fff;
+		}
+		#kinds-right li{
+			width: 220px;
+			height: 300px;
+			border:1px solid #dbdbdb;
+			float: left;
+			margin: 8px;
+			text-align: center;
+		}
+		#kinds-right li img{
+			height: 160px;
+			margin: 55px 0 35px 0;
+		}
+		.kinds-right-p{
+			color: #a3a3a3;
+		}
+		/*底部*/
+		.bottom-wrap{
+			height: 280px;
+			background-color: #2e2e2e;
+		}
+		.bottom-top{
+			width: 1200px;
+			height: 180px;
+			border-bottom: 1px solid #454545;
+			margin: 0 auto;
+		}
+		.bottom-top li{
+			width: 110px;
+			height: 180px;
+			float: left;
+			text-align: left;
+			margin-right:160px;
+		}
+		.bottom-top li:last-child{
+			margin-right: 0px; 
+		}
+		.bottom-top p{
+			color: #ebebeb;
+			margin: 20px 10px;
+		}
+		.bottom-top p a{
+			color: #ebebeb;
+			font-size: 14px;
+		}
+		.bottom-last{
+			width: 600px;
+			height: 100px;
+			margin: 0 auto;
+			padding:30px; 
+		}
+		.bottom-last p{
+			color: #a4a4a4;
+			text-align: center;
+			margin-bottom: 10px ;
+			font-size: 14px;
+		}
+		.bottom-last a{
+			color: #a4a4a4;
+			font-size: 14px;
+		}
+
+	</style>
+</head>
+<body>
+	<!--头部-->
+	<div class="header-wrap">
+		<div class="header">
+			<p id="headerleft">
+				<a href="#">我的收藏</a>
+				<a href="#">E族之家手机版</a>
+				<span>
+					<img src="imgs/qqlogo.png" alt="">
+					328203328
+				</span>
+			</p>
+			<p id="headerright">
+				<a href="#">扫描加入</a>
+				欢迎来到E族之家，
+				<a href="#">请登录</a>|<a href="#">注册</a>
+			</p>
+		</div>
+	</div> 
+	<!--搜索栏-->
+	<div class="search">
+		<div id="search-left">
+			<img src="imgs/biglogo.png" alt=""></div>
+			<div id="search-middle">
+				<input type="text" name="search" value="请输入关键词！" >
+				<a href="#">搜索</a>
+			</div>
+			<div id="search-right">
+				<img src="imgs/car.png"><a href="#">购物车(0)件</a>	
+			</div>
+	</div>
+	<!--导航-->
+	<div class="nav-wrap">
+		<div class="nav">
+			<p>
+				<a href="#">首页</a>
+				<a href="#">E族生活</a>
+				<a href="#">E族服务</a>
+				<a href="#">E族爱心</a>
+			</p>
+		</div>
+	</div>
+	<!--主体部分-->
+	<div class="main-wrap">
+		<div class="main">
+			<p id="crumb">
+				当前位置：
+				<a href="#">E族爱心</a> >
+				<a href="#">食品</a>
+			</p>
+			<div id="kinds-right">
+				<ul>
+					<li>
+						<img src="imgs/pepper.png" alt="">
+						<p class="kinds-right-p">精品辣椒100g</p>
+						<p>¥90.00</p>
+					</li>
+					<li>
+						<img src="imgs/passion.png" alt="">
+						<p class="kinds-right-p">特级百香果3斤</p>
+						<p>¥90.00</p>
+					</li>
+					<li>
+						<img src="imgs/wine.png" alt="">
+						<p class="kinds-right-p">万威啤酒500ml</p>
+						<p>¥90.00</p>
+					</li>
+					<li>
+						<img src="imgs/seeds.png" alt="">
+						<p class="kinds-right-p">万威啤酒</p>
+						<p>¥90.00</p>
+					</li>
+					<li>
+						<img src="imgs/pepper.png" alt="">
+						<p class="kinds-right-p">精品辣椒100g</p>
+						<p>¥90.00</p>
+					</li>
+					<li>
+						<img src="imgs/passion.png" alt="">
+						<p class="kinds-right-p">特级百香果3斤</p>
+						<p>¥90.00</p>
+					</li>
+					<li>
+						<img src="imgs/wine.png" alt="">
+						<p class="kinds-right-p">万威啤酒500ml</p>
+						<p>¥90.00</p>
+					</li>
+					<li>
+						<img src="imgs/seeds.png" alt="">
+						<p class="kinds-right-p">万威啤酒500ml</p>
+						<p>¥90.00</p>
+					</li>
+				</ul>
+			</div>
+			<div id="kinds-left-top">
+			<a href="#"><img src="imgs/kinds.png"></a>
+				全部分类
+			</div>
+			<div id="kinds-left-bottom">
+				<ul class="simg">
+					<a href="#">
+						<li>>食品</li>
+						<li>>生活用品</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--底部-->
+	<div class="bottom-wrap">
+		<div class="bottom-top">
+			<ul>
+				<li><p>新手上路</p>
+					<p><a href="#">售后流程</a></p>
+					<p><a href="#">购物流程</a></p>
+					<p><a href="#">订购方式</a></p>
+				</li>
+				<li><p>配送方式</p>
+					<p><a href="#">货到付款区域</a></p>
+					<p><a href="#">配送支付查询</a></p>
+					<p><a href="#">支付方式说明</a></p>
+				</li>
+				<li><p>购物指南</p>
+					<p><a href="#">常见问题</a></p>
+					<p><a href="#">订购流程</a></p>
+					<p><a href="#">注册新会员</a></p>
+				</li>
+				<li><p>售后服务</p>
+					<p><a href="#">退换货原则</a></p>
+					<p><a href="#">售后服务保证</a></p>
+					<p><a href="#">换货流程</a></p>
+				</li>
+				<li><p>关于我们</p>
+					<p><a href="#">网站故障报告</a></p>
+					<p><a href="#">联系我们</a></p>
+					<p><a href="#">投诉与建议</a></p>
+				</li>
+			</ul>
+		</div>
+		<div class="bottom-last">
+		<p>
+			<a href="#">E族生活</a>&nbsp|&nbsp<a href="#">居家维修保养</a>&nbsp|&nbsp
+			<a href="#">住宿优惠信息</a>&nbsp|&nbsp<a href="#">出行接送</a>&nbsp|&nbsp
+			<a href="#">E族活动</a>&nbsp|&nbsp<a href="#">E族爱心</a>&nbsp|&nbsp
+			<a href="#">积分商城</a>&nbsp|&nbsp
+		</p>
+		<p>
+			©2017-2018 E族之家 版权所有，并保留所有权利。ICP备案证书号：粤ICP17127392号
+		</p>
+		</div>
+	</div>
+</body>
+</html>
